@@ -1,0 +1,10 @@
+#contact-about {
+  #contact {
+    padding-top: 150px;
+
+    @media (max-width: 767px) {
+      padding-top: 100px;
+      padding-bottom: 75px;
+    }
+  }
+}

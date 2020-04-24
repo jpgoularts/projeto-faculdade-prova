@@ -90,6 +90,76 @@ header {
   position: fixed;
   height: 90px;
 }
+header .navbar {
+  padding: 0;
+}
+header .navbar .navbar-toggler {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  outline: none !important;
+}
+header .navbar .navbar-toggler span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+header .navbar .navbar-toggler span:nth-child(1) {
+  top: 0px;
+}
+header .navbar .navbar-toggler span:nth-child(2) {
+  top: 18px;
+}
+header .navbar .navbar-toggler span:nth-child(3) {
+  top: 18px;
+}
+header .navbar .navbar-toggler span:nth-child(4) {
+  top: 36px;
+}
+header .navbar .navbar-toggler.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+header .navbar .navbar-toggler.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+header .navbar .navbar-toggler.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+header .navbar .navbar-toggler.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
 header .area-logo {
   display: flex;
   align-items: center;
@@ -97,22 +167,25 @@ header .area-logo {
   color: #fff;
   width: 215px;
   background-color: #689ded;
+  padding: 0;
+  margin: 0;
+  height: 90px;
+  transition: all 0.5s ease;
 }
 header .area-logo img {
   width: 177px;
   transition: width 0.5s ease;
 }
-header .area-menu {
-  display: flex;
-  align-items: center;
+header .menu-desk {
+  background-color: #fff;
 }
-header .area-menu .menu-desk ul {
+header .menu-desk ul {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
 }
-header .area-menu .menu-desk ul li {
+header .menu-desk ul li {
   margin: 0 5px;
   padding: 0 5px;
   text-transform: uppercase;
@@ -120,12 +193,12 @@ header .area-menu .menu-desk ul li {
   font-size: 12px;
   letter-spacing: 1.5px;
 }
-header .area-menu .menu-desk ul li a {
+header .menu-desk ul li a {
   text-decoration: none;
   color: #7d7d7d;
   position: relative;
 }
-header .area-menu .menu-desk ul li a:after {
+header .menu-desk ul li a:after {
   content: "";
   width: 0;
   height: 2px;
@@ -135,10 +208,13 @@ header .area-menu .menu-desk ul li a:after {
   left: 0;
   transition: all 0.5s ease-in;
 }
-header .area-menu .menu-desk ul li a:hover:after {
+header .menu-desk ul li a:hover:after {
   width: 100%;
 }
 header.header-active {
+  height: 70px;
+}
+header.header-active .area-logo {
   height: 70px;
 }
 header.header-active .area-logo img {
@@ -152,6 +228,16 @@ header.header-active .area-logo img {
   height: 500px;
   object-fit: cover;
 }
+@media (max-width: 992px) {
+  #banner .carousel-banners .owl-item img {
+    height: 400px;
+  }
+}
+@media (max-width: 575px) {
+  #banner .carousel-banners .owl-item img {
+    height: 235px;
+  }
+}
 #banner .carousel-products .carousel-products-title {
   margin: 30px 0;
 }
@@ -161,11 +247,34 @@ header.header-active .area-logo img {
   color: #fff;
   font-weight: 700;
 }
+@media (max-width: 575px) {
+  #banner .carousel-products .product-list {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
 #banner .carousel-products .box-products {
   margin: 0 20px;
   background-color: #fff;
   height: 280px;
   border-radius: 10px;
+}
+@media (max-width: 1200px) {
+  #banner .carousel-products .box-products {
+    height: 300px;
+    width: 285px;
+  }
+}
+@media (max-width: 992px) {
+  #banner .carousel-products .box-products {
+    margin: 0 5px;
+    width: unset;
+  }
+}
+@media (max-width: 575px) {
+  #banner .carousel-products .box-products {
+    width: unset;
+  }
 }
 #banner .carousel-products .box-products img {
   height: 250px;
@@ -257,6 +366,13 @@ header.header-active .area-logo img {
   color: #c65343;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  #projects .destaques .cardComponent .cardMaster .cardinner .cardinfoofset {
+    display: block;
+    bottom: 30px;
+    opacity: 1;
+  }
+}
 #projects .destaques .cardComponent .cardMaster:hover .maskopacity {
   background: #000;
 }
@@ -275,6 +391,16 @@ header.header-active .area-logo img {
 }
 #projects .destaques .cardComponent:nth-child(2) {
   width: 49.5%;
+}
+@media (max-width: 768px) {
+  #projects .destaques .cardComponent {
+    width: 49.5%;
+  }
+}
+@media (max-width: 575px) {
+  #projects .destaques .cardComponent {
+    width: 100% !important;
+  }
 }
 
 #about {
@@ -296,12 +422,28 @@ header.header-active .area-logo img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+@media (max-width: 992px) {
+  #about .short-description .short-description-img img {
+    height: 303px;
+  }
+}
 #about .short-description .short-description-text {
   flex: 1;
   padding: 20px;
 }
 #about .short-description .short-description-text .btn-danger {
   background-color: #c65343;
+}
+@media (max-width: 768px) {
+  #about .short-description .short-description-text {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  #about .short-description {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #about .cards-description {
   display: flex;
@@ -334,6 +476,17 @@ header.header-active .area-logo img {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+@media (max-width: 992px) {
+  #about .cards-description .box-cards {
+    padding: 35px 70px;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  #about .cards-description {
+    flex-wrap: wrap;
+  }
+}
 #about .counter {
   display: flex;
   justify-content: space-around;
@@ -355,6 +508,17 @@ header.header-active .area-logo img {
   color: #c65343;
   font-size: 40px;
   margin-left: 10px;
+}
+@media (max-width: 575px) {
+  #about .counter .tags {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  #about .counter {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 #contact .align-box {
@@ -480,6 +644,75 @@ header.header-active .area-logo img {
   100% {
     transform: translateY(200px);
     opacity: 1;
+  }
+}
+#page-about #about {
+  padding: 110px 0 189px;
+}
+@media (max-width: 1200px) {
+  #page-about #about .short-description {
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
+@media (max-width: 1200px) {
+  #page-about #about .short-description .short-description-text {
+    text-align: center;
+  }
+}
+#page-about #about .profissionais {
+  margin-top: 65px;
+}
+@media (max-width: 1200px) {
+  #page-about #about .profissionais {
+    margin-top: 10px;
+  }
+}
+#page-about #about .profissionais .profissionais-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#page-about #about .profissionais .profissinal {
+  display: flex;
+  margin: 20px 0;
+  height: 300px;
+}
+@media (max-width: 1200px) {
+  #page-about #about .profissionais .profissinal {
+    height: unset;
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
+#page-about #about .profissionais .profissinal img {
+  max-width: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+#page-about #about .profissionais .profissinal .profissional-text {
+  margin-left: 20px;
+}
+@media (max-width: 1200px) {
+  #page-about #about .profissionais .profissinal .profissional-text {
+    text-align: center;
+  }
+}
+#page-about #about .profissionais .profissinal.invert {
+  flex-direction: row-reverse;
+}
+@media (max-width: 575px) {
+  #page-about #contact {
+    padding-bottom: 50px;
+  }
+}
+
+#contact-about #contact {
+  padding-top: 150px;
+}
+@media (max-width: 767px) {
+  #contact-about #contact {
+    padding-top: 100px;
+    padding-bottom: 75px;
   }
 }
 

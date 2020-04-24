@@ -1,0 +1,68 @@
+#page-about {
+  #about {
+    padding: 110px 0 189px;
+
+    .short-description {
+      @media (max-width: 1200px) {
+        flex-direction: column !important;
+        align-items: center;
+      }
+
+
+      .short-description-text {
+        @media (max-width: 1200px) {
+          text-align: center;
+        }
+      }
+    }
+
+    .profissionais {
+      margin-top: 65px;
+
+      @media (max-width: 1200px) {
+        margin-top: 10px;
+      }
+
+      .profissionais-title {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .profissinal {
+        display: flex;
+        margin: 20px 0;
+        height: 300px;
+
+        @media (max-width: 1200px) {
+          height: unset;
+          flex-direction: column !important;
+          align-items: center;
+        }
+
+        img {
+          max-width: 400px;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        .profissional-text {
+          margin-left: 20px;
+
+          @media (max-width: 1200px) {
+            text-align: center;
+          }
+        }
+
+        &.invert {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+
+  #contact {
+    @media (max-width: 575px) {
+      padding-bottom: 50px;
+    }
+  }
+}

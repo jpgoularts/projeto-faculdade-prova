@@ -1,5 +1,16 @@
 $(document).ready(function(){
-	$('#nav-icon').click(function(){
+	var SPMaskBehavior = function (val) {
+		return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+	},
+	spOptions = {
+		onKeyPress: function(val, e, field, options) {
+				field.mask(SPMaskBehavior.apply({}, arguments), options);
+			}
+	};
+	
+	$('.paciente').mask(SPMaskBehavior, spOptions);
+
+	$('.navbar-toggler').click(function(){
 		$(this).toggleClass('open');
 	});
 
@@ -17,9 +28,23 @@ $(document).ready(function(){
 		nav:false,
 		items:4,
 		dots: false,
+		responsive:{
+			0:{
+					items:1,
+			},
+			575:{
+					items:2,
+			},
+			767:{
+					items:3,
+			},
+			1200:{
+					items:4,
+			}
+		},
 		autoplay:true,
 		autoplayTimeout:3000,
-		autoplayHoverPause:false
+		autoplayHoverPause:false,
 	});
 
 	$(window).on('scroll', function(){

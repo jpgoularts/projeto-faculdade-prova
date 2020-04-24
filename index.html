@@ -15,36 +15,42 @@
 </head>
 <body>
     <header>
-        <!-- <div id="nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div> -->
-        <div class="container d-flex justify-content-between h-100">
-            <div class="area-logo">
-                <img src="./assets//img/logo.png" alt="Logo">
-            </div>
-            <div class="area-menu">
-                <div class="menu-desk">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="./assets/pages/about.html">Quem somos</a></li>
-                        <li><a href="./assets/pages/contact.html">Contato</a></li>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand area-logo" href="#"><img src="./assets//img/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse menu-desk" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/about.html">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/contact.html">Contato</a>
+                        </li>
                     </ul>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
     <section id="banner">
         <div class="container">
             <div class="carousel-banners owl-carousel">
                 <img src="./assets/img/banner1.jpg" alt="Banner">
+                <img src="./assets/img/psicologo.jpeg" alt="Banner">
             </div>
             <div class="carousel-products">
                 <div class="carousel-products-title">
                     <h1>O que fazemos de melhor</h1>
                 </div>
-                <div class="owl-carousel">
+                <div class="product-list owl-carousel">
                     <div class="box-products">
                         <img src="assets/img/psicologia-infantil.jpg">
                         <div class="box-products-description">
@@ -94,7 +100,7 @@
                                 <p class="carname">Marcos Antônio</p>
                                 <p class="cardesc">Psicólogo</p>
                                 <div class="cardlinha"></div>
-                                <a class="btn btn-light">Entre em contato!</a>
+                                <a href="./assets/pages/contact.html" class="btn btn-light">Entre em contato!</a>
                             </div>
                         </div>
                     </div>
@@ -108,7 +114,7 @@
                                 <p class="carname">Fernanda Montenegro</p>
                                 <p class="cardesc">Psicóloga</p>
                                 <div class="cardlinha"></div>
-                                <a class="btn btn-light">Entre em contato!</a>
+                                <a href="./assets/pages/contact.html" class="btn btn-light">Entre em contato!</a>
                             </div>
                         </div>
                     </div>
@@ -122,7 +128,7 @@
                                 <p class="carname">Brian Alves</p>
                                 <p class="cardesc">Psicólogo</p>
                                 <div class="cardlinha"></div>
-                                <a class="btn btn-light">Entre em contato!</a>
+                                <a href="./assets/pages/contact.html" class="btn btn-light">Entre em contato!</a>
                             </div>
                         </div>
                     </div>
@@ -136,7 +142,7 @@
                                 <p class="carname">Wesley Fernandez</p>
                                 <p class="cardesc">Psicólogo</p>
                                 <div class="cardlinha"></div>
-                                <a class="btn btn-light">Entre em contato!</a>
+                                <a href="./assets/pages/contact.html" class="btn btn-light">Entre em contato!</a>
                             </div>
                         </div>
                     </div>
@@ -150,7 +156,7 @@
                                 <p class="carname">Fabrícia Felipe</p>
                                 <p class="cardesc">Psicólogo</p>
                                 <div class="cardlinha"></div>
-                                <a class="btn btn-light">Entre em contato!</a>
+                                <a href="./assets/pages/contact.html" class="btn btn-light">Entre em contato!</a>
                             </div>
                         </div>
                     </div>
@@ -281,6 +287,7 @@
     </a>
 
     <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/jquery.mask.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/fslightbox.min.js"></script>

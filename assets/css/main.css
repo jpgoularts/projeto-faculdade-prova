@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-color: #a1c6fd !important;
   font-family: "Roboto", sans-serif !important;
+  transition: all 1s ease;
 }
 
 #nav-icon {

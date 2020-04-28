@@ -57,7 +57,7 @@
                             >
                             <a class="nav-link" href="./anamneses.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                anamnesse</a
+                                Anamneses</a
                             >
                         </div>
                     </div>
@@ -126,44 +126,44 @@
                             <div class="card-body">
                                 <form method="POST" action="actions/add_cliente_action.php">
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Nome Paciente</label>
                                             <input type="text" class="form-control" id="nome" name="nome" placeholder="Tânia">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Queixas</label>
                                             <input type="text" class="form-control" name="queixas" placeholder="Dor de cabeça">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Plano de tratamento</label>
                                             <input type="text" class="form-control" name="plano_tratamento">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Diagnostico Final</label>
                                             <input type="text" class="form-control" name="diagnostico">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Resumo da sessão</label>
                                             <input type="text" class="form-control" name="Resumo">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Evolução</label>
                                             <input type="text" class="form-control" name="Evolução" placeholder="90%">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Pago</label>
                                             <select class="form-control" id="planoPaciente">
                                             <option>Sim</option>
                                             <option>Não</option>
                                           </select>
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                           <label for="idadePaciente">Data de Nascimento</label>
                                           <input type="date" class="form-control" id="idadePaciente" placeholder="25/04/1985">
                                         </div>

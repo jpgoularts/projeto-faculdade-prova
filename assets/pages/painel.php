@@ -52,7 +52,7 @@
                             >
                             <a class="nav-link" href="./anamneses.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                anamnesse</a
+                                Anamneses</a
                             >
                             <a class="nav-link" href="./sessoes.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>

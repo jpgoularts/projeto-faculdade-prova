@@ -126,53 +126,53 @@
                             <div class="card-body">
                                 <form method="POST" action="actions/add_cliente_action.php">
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Nome Paciente</label>
                                             <input type="text" class="form-control" id="nome" name="nome" placeholder="Tânia">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Queixas</label>
                                             <input type="text" class="form-control" name="queixas" placeholder="Dor de cabeça">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Sintomas</label>
                                             <input type="text" class="form-control" name="sintomas" placeholder="Nervosismo">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Tratamentos Anteriores</label>
                                             <input type="text" class="form-control" name="tratamentos" placeholder="Conversa">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">medicamentos</label>
                                             <input type="text" class="form-control" name="medicamentos" placeholder="Dipirona">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Infância</label>
                                             <input type="text" class="form-control" name="infancia" placeholder="Agitada">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Rotina</label>
                                             <input type="text" class="form-control" name="rotina" placeholder="Desgastante">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Vicios</label>
                                             <input type="text" class="form-control" name="vicios" placeholder="alcool">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Hobbies</label>
                                             <input type="text" class="form-control" name="hobbies" placeholder="Nadar">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Trabalho</label>
                                             <input type="text" class="form-control" name="trabalho">
                                         </div>
@@ -182,43 +182,43 @@
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Comportamento</label>
                                             <input type="text" class="form-control" name="comportamento">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Linguagem</label>
                                             <input type="text" class="form-control" name="linguagem">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Humor</label>
                                             <input type="text" class="form-control" name="humor">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Hípotese diagnosticada</label>
                                             <input type="text" class="form-control" name="hipotese_diagnosticada">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Valor da Sessão</label>
                                             <input type="text" class="form-control" name="valor_sessao">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Número de Sessões</label>
                                             <input type="text" class="form-control" name="numero_sessoes,">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Periodicidade</label>
                                             <input type="text" class="form-control" name="periodicidade">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="mensagemPaciente">Observações:</label>
                                             <textarea class="form-control" id="mensagemPaciente" rows="3"></textarea>
                                         </div>

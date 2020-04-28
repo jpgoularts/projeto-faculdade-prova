@@ -53,7 +53,7 @@
                             >
                             <a class="nav-link" href="./anamneses.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                anamnesse</a
+                                Anamneses</a
                             >
                             <a class="nav-link" href="./sessoes.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
@@ -160,17 +160,17 @@
                             <div class="card-body">
                                 <form method="POST" action="actions/add_cliente_action.php">
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Nome</label>
                                             <input type="text" class="form-control" id="nome" name="nome" placeholder="Tânia Goulart">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">CPF</label>
                                             <input type="text" class="form-control cpf" id="cpf" name="cpf" placeholder="000.000.000-00">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">CRP</label>
                                             <input type="text" class="form-control" id="crp" name="crp">
                                         </div>

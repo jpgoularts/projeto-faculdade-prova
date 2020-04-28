@@ -53,7 +53,7 @@
                             >
                             <a class="nav-link" href="./anamneses.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                anamnesse</a
+                                Anamneses</a
                             >
                             <a class="nav-link" href="./sessoes.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
@@ -237,28 +237,28 @@
                             <div class="card-body">
                                 <form method="POST" action="actions/add_cliente_action.php">
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">Nome</label>
                                             <input type="text" class="form-control" id="nome" name="nome" placeholder="Tânia Goulart">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                           <label for="sexoPaciente">Sexo</label>
                                           <select class="form-control" id="sexoPaciente">
                                             <option>Masculino</option>
                                             <option>Feminino</option>
                                           </select>
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                           <label for="idadePaciente">Data de Nascimento</label>
                                           <input type="date" class="form-control" id="idadePaciente" placeholder="25/04/1985">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col form-group">
                                             <label for="inputEmail4">CPF</label>
                                             <input type="text" class="form-control cpf" id="cpf" name="cpf">
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-group">
                                           <label for="planoPaciente">Possui plano de saúde?</label>
                                           <select class="form-control" id="planoPaciente">
                                             <option>Sim</option>
@@ -301,15 +301,21 @@
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                      <div class="custom-file col">
+                                      <div class="custom-file" style="margin-bottom: 1rem">
+                                          <div class="col form-group">                                       
                                         <input type="file" class="custom-file-input" id="validatedCustomFile" required>
                                         <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
                                         <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                        </div> 
                                       </div>
                                     </div>
                                     <div class="form-row">
+                                        <div class="col">
+                                        <div class="form-group">
                                       <label for="mensagemPaciente">Observações:</label>
                                       <textarea class="form-control" id="mensagemPaciente" rows="3"></textarea>
+                                      </div>
+                                      </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Cadastrar</button>
                                 </form>
